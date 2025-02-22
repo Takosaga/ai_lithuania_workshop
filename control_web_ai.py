@@ -9,7 +9,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 
 async def main():
     agent = Agent(
-        task="Go to tsi.lv and find information of each masters degrees available, export and format in JSON",
+        task="Go to walmart website and find out what items are on sales, export as item name: sale price",
         llm=ChatGoogleGenerativeAI(model="gemini-2.0-flash-exp"),
     )
     result = await agent.run()
